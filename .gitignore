@@ -29,3 +29,4 @@ legacy*
 __pycache__
 .DS_Store
 !.gitkeep
+!conf/public/tuneparams.yml
