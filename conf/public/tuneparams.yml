@@ -1,0 +1,16 @@
+data:
+  traindata: 'customds/mrebel_data_100000k.hf'
+  tokenizer: 'custommod/mistral_tokenizer'
+  pretrained: 'custommod/mistral_basemod'
+  checkpoints: 'checkpoints/mistral_finetuned'
+
+hyper:
+  4bitquant: True
+  floattype: 'torch.bfloat16'
+  attentiondim: 64
+  dropout: 0.1
+  scaling: 16
+  max_len: 2048
+  lr: 2.0e-05
+  epochs: 1
+  logging: 5
